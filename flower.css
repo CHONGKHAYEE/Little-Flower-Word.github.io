@@ -1,0 +1,277 @@
+html, body, header, #intro
+{
+    height: 100%;
+}
+
+#intro
+{
+    background: url("https://images.wallpaperscraft.com/image/sakura_flowers_bloom_125940_300x168.jpg")no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    
+}
+
+#brand
+{
+    font-family: 'Merienda', cursive;
+    font-size: 20px;
+    color: rgb(50, 96, 134);
+    float: left;
+}
+
+#navbar li
+{
+    font-size: 15px;
+}
+
+#navbar li :hover 
+{
+    background-color: rgba(255, 255, 255, 0.747);
+}
+
+h2
+{
+    font-family: 'Abel', sans-serif;
+    color: black;
+    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+#fform
+{
+    width: 80%;
+    padding-left: 20em;
+}
+
+.social 
+{
+  margin-top: 0;
+  text-align: center;
+  margin-left: -6em;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.social li 
+{
+    display: inline-block;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.social li :hover 
+{
+    color: rgb(161, 161, 161);
+}
+
+.fa  
+{
+  color: rgb(253, 253, 253);
+  margin-left: 50px;
+  text-align: center;
+} 
+
+#footerbg
+{
+    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat;
+    background-size: cover;
+}
+
+#footers
+{
+    background-color: #222;
+    height: 60px;
+}
+
+#footer2
+{
+    background-color: rgb(78, 78, 78);
+    height: 30px;
+}
+
+p
+{
+    color: grey;
+}
+
+#content
+{
+    padding-left: 80px;
+}
+
+#content h1
+{
+    font-family: 'Amatic SC', cursive;
+    font-size: 60px;
+    
+}
+
+.explain
+{
+    color: rgb(104, 104, 104);
+    font-size: 21px;
+    font-family: 'Dosis', sans-serif;
+    text-align: left;
+    padding-left: 70px;
+}
+
+.more, .more p
+{
+    display: none;
+    color: rgb(104, 104, 104);
+    font-size: 21px;
+    font-family: 'Dosis', sans-serif;
+    text-align: left;
+    padding-left: 70px;
+}
+
+#btmore
+{
+    width: 80px;
+    height: 40px;
+    font-size: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#btmore:hover
+{
+    background-color: rgb(207, 207, 207);
+}
+/*picture*/
+.container .thumbex 
+{
+    margin: 10px 5px 10px;
+    width: 100%;
+    height: 250px;
+    min-width: 250px;
+    max-width: 400px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    outline: 3px solid white;
+    outline-offset: -15px;
+    background-color: blue;
+    box-shadow: 5px 10px 40px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container .thumbex .thumbnail 
+{
+    overflow: hidden;
+    min-width: 250px;
+    height: 250px;
+    position: relative;
+    opacity: 0.86;
+    backface-visibility: visible;
+    transition: all 0.8s ease-out;
+}
+
+.container .thumbex .thumbnail img 
+{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: 105%;
+    transform: translate(-50%, -50%);
+    backface-visibility: hidden;
+    
+}
+
+.container .thumbex .thumbnail span 
+{
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px ;
+    margin: 0 65px;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 28px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 5px;
+    transition: all 0.5s ease-out;
+}
+
+.container .thumbex .thumbnail:hover 
+{
+    backface-visibility: hidden;
+    transform: scale(1.15, 1.15);
+    opacity: 1;
+}
+
+.container .thumbex .thumbnail:hover span 
+{
+    opacity: 0;
+}
+/*language*/
+.clang
+{
+    background:url(bottom_bg.jpg);
+}
+
+.clang img 
+{
+  width: 370px;
+  height: 250px;
+  position: relative;
+  margin: 5px 5px;
+  filter: brightness(80%);
+}
+
+.title 
+{
+  position: absolute;
+  width: 400px;
+  top: 100px;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  transition: top .5s ease;
+}
+
+.clang:hover .title {
+  top: 20px;
+  font-family: 'Dosis', sans-serif;
+}
+
+.detail 
+{
+  position: absolute;
+  left: 40px;
+  top: 80px;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.detail p 
+{
+  width: 330px;
+  height: 160px;
+  padding: 15px 25px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.4);
+  border: solid 2px white;
+  background-color: rgba(161, 161, 161, 0.589);
+  z-index: 1;
+}
+
+.clang:hover .detail 
+{
+  opacity: 1;
+}
